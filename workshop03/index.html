@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light / Dark Mode</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/7b48c46887.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="top-menu">
+    <div class="theme-switch-container">
+    <span id="toggle-icon">
+      <span class="toggle-text">โหมดกลางวัน</span>
+      <i class="fa-solid fa-sun fa-2x"></i>
+      <!-- <i class="fa-solid fa-moon"></i> -->
+      <label class="theme-switch">
+        <input type="checkbox" id="switch-mode">
+        <div class="slider round"></div>
+      </label>
+    </span>
+    </div>
+    <i id="hidden-menu" class="fa-solid fa-bars fa-2x"></i>  
+    <nav id="nav">
+      <a href="#home">หน้าแรก</a>
+      <a href="#portfolio">ผลงาน</a>
+      <a href="#contact">ช่องทางการติดต่อ</a>
+    </nav>
+  </div>
+  <section id="home">
+    <div class="title-group">
+      <h1>พิษณุ นามนิล</h1>
+      <h2>ร้านเกมส์ สร้างเวบ เขียนโปรแกรม ไอทีซัพพอร์ท</h2>
+    </div>
+  </section>
+  <section id="portfolio">
+    <h1>ผลงาน</h1>
+    <div class="portfolio-container">
+      <div class="portfolio-card">
+        <a href="https://thaijintan.com/"><h2>THAI JINTAN</h2></a>
+        <img src="./assets/img/thaijintan1200-800.png" alt="">
+      </div>
+      <div class="portfolio-card">
+        <a href="https://thainagoya.com/"><h2>THAI NAGOYA</h2></a>
+        <img src="./assets/img/thainagoya1200-800.png" alt="">
+      </div>
+      <div class="portfolio-card">
+        <a href="https://mikrotik.com/"><h2>MIKROTIK MTCNA</h2></a>
+        <img src="./assets/img/cert-mtcna.png" alt="">
+      </div>
+    </div> 
+  </section>
+  <section id="contact" class="title-group">
+    <h1>ช่องทางติดต่อ</h1>
+    <div class="contact-link">
+        <a href="https://www.facebook.com/lockdoor"><i class="fa-brands fa-facebook-square fa-5x"></i></a>
+        <a href="https://line.me/ti/p/~lockdoor"><i class="fa-brands fa-line fa-5x"></i></a>
+        <a href="https://github.com/lockdoor"><i class="fa-brands fa-github-square fa-5x"></i></a>
+        <a href="https://medium.com/@ayatana"><i class="fa-brands fa-medium fa-5x"></i></a>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+</html>

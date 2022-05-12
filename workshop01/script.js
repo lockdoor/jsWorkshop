@@ -25,7 +25,7 @@ docReady(()=>{
         rateText.innerHTML = `${amount_one.value} ${one} = ${rate} ${two}`
         amount_two.value =  rate
       })
-    // console.log('calculate work')
+      .catch(() => alert('Oop! problem with API'))
   }
 
   calculateMoney()
