@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+* {
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  /* display: flex;
+  flex-direction: column; */
+  min-height: 100vh;
+  background-color: rgb(60, 60, 60);
+  align-items: center;
+  /* justify-content: center; */
+}
+header{
+  background-color: rgb(30, 30, 30);
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+  font-size: 30px;
+  transform: translateY(0);
+  transition: 0.5s ease-in-out;
+}
+header.hide{
+  transform: translateY(-100%);
+}
+#selectLevel{
+  font-size: 30px;
+  width: 200px;
+  border-radius: 10px;
+  appearance: none;
+}
+@media(max-width: 700px){
+  div#game{
+    width: 400px;
+  }
+}
+#gameover-container{
+  background: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#gameover-container p{
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+#gameover-container button{
+  font-size: 24px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 0;
+}
+#game{
+  position: absolute;
+  /* max-width: 400px; */
+  width: 600px;
+  border-radius: 10px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: rgb(90, 75, 136);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 5px 20px 1px rgba(0,0,0,0.5);;
+}
+#title{
+  background-color: rgb(30, 30, 30);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+#timeScore{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+#time-container{
+  color: rgb(205, 255, 228)
+}
+#score-container{
+  color: #fff
+}
+#word{
+  font-size: 50px;
+  text-align: center;
+  padding: 30px 0;
+  color: orange;
+}
+#typing{
+  font-size: 30px;
+  border-radius: 5px;
+  border: 0;
+  text-align: center;
+  
+}
+#typing:focus{
+  outline: 0;
+}
+#config{
+  position:absolute;
+  bottom: 30px;
+  left: 30px;
+  cursor: pointer;
+  background-color: rgb(30, 30, 30);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+#config:hover{
+  transform: scale(1.2);
+}

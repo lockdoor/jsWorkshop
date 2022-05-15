@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/7b48c46887.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header id="header">
+    <label for="select-level">ระดับความยาก:
+      <select id="select-level">
+        <option value="easy">ง่าย</option>
+        <option value="medium" selected>ปานกลาง</option>
+        <option value="hard">ยาก</option>
+      </select>
+    </label>    
+  </header>
+  
+  <div id="game">
+    <div id="title">เกมพิมพ์เร็ว | Speed Typing</div>
+    <div id="timeScore">
+      <p id="time-container">เวลา <span id="time"></span> วินาที</p>
+      <p id="score-container"><span id="score"></span> คะแนน</p>
+    </div>
+    <div id="word"></div>
+    <input type="text" id="typing" placeholder="ป้อนคำที่คุณเห็น">
+    <div id="gameover-container">
+      <p>จบเกมส์แล้วนะครับ</p>
+      <p>คุณทำคะแนนได้ <span id="total-score"></span> คะแนน</p>
+      <button id="renew">เริ่มเกมใหม่</button>
+    </div>
+  </div>
+
+  <button id="config"><i class="fa-solid fa-gear fa-2x"></i></button>
+
+  <script src="./script.js"></script>
+</body>
+</html>
