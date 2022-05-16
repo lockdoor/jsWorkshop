@@ -44,7 +44,7 @@ randomWord()
 
 function decreseTime(){
   const myInterval = setInterval(()=>{
-    console.log(time)
+    // console.log(time)
     time--
     timeEl.innerHTML = time
     if(time === 0){
@@ -54,7 +54,7 @@ function decreseTime(){
   },1000)
 }
 
-typingEl.addEventListener('focus', ()=>console.log('focus', decreseTime()))
+typingEl.addEventListener('focus', decreseTime)
 typingEl.addEventListener('input', e => {  
   if(e.target.value == wordEl.innerHTML){
     randomWord()
